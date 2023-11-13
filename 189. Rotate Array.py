@@ -15,6 +15,15 @@ def rotate(self, nums: List[int], k: int) -> None:
     for i in range(k, (L + k) // 2):
         nums[i], nums[L - 1 - i + k] = nums[L - 1 - i + k], nums[i]
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++____________________________
+OR
+
+class Solution:
+    def rotate(self, nums: List[int], k: int) -> None:
+        for i in range(k):
+            a = nums.pop()      # Step 1: Remove the last element from the list
+            nums.insert(0, a)   # Step 2: Insert the removed element at the beginning of the list
+
  
 
 # Example 1:
