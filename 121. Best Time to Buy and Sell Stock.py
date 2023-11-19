@@ -1,3 +1,13 @@
+
+
+
+# Input: prices = [7,1,5,3,6,4]
+# Output: 5
+# buy at 1 and sell at 6 6-1 =  5 is maximum profit
+
+
+
+
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         # Initialize variables to keep track of the minimum price and maximum profit
